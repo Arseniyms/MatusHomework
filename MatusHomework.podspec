@@ -13,6 +13,7 @@ Pod::Spec.new do |spec|
   spec.summary      = "First CocoaPod of Arseniy Matus."
 
   spec.description  = <<-DESC
+	    This is first CocoaPod for OTUS homework 
                    DESC
 
   spec.homepage     = "https://github.com/Arseniyms/MatusHomework"
