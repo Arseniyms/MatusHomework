@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT" }
 
   spec.dependency 'SnapKit', '~> 5.6.0'
-  spec.dependency 'OtusHomework', '~> 0.0.17', :git => 'https://github.com/NikkoGladkko/OtusHomework.git'
+
 
   spec.platform     = :ios, "13.0"
   spec.author             = { "Arseniy" => "arsmatus@list.ru" }
