@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "MatusHomework"
-  spec.version      = "0.0.5"
+  spec.version      = "0.0.6"
   spec.summary      = "First CocoaPod of Arseniy Matus."
 
   spec.description  = <<-DESC
@@ -19,8 +19,8 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/Arseniyms/MatusHomework"
   spec.license      = { :type => "MIT" }
 
-  spec.dependency = 'SnapKit', '~> 5.6.0'
-  spec.dependency = 'OtusHomework', '~> 0.0.17'
+  spec.dependency 'SnapKit', '~> 5.6.0'
+  spec.dependency 'OtusHomework', '~> 0.0.17'
   spec.platform     = :ios, "13.0"
   spec.author             = { "Arseniy" => "arsmatus@list.ru" }
   spec.source       = { :git => "https://github.com/Arseniyms/MatusHomework.git", :tag => "#{spec.version}" }
