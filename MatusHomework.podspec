@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "MatusHomework"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "First CocoaPod of Arseniy Matus."
 
   spec.description  = <<-DESC
