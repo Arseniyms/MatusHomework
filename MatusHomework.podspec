@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "MatusHomework"
-  spec.version      = "0.0.17"
+  spec.version      = "0.0.18"
   spec.summary      = "First CocoaPod of Arseniy Matus."
 
   spec.description  = <<-DESC
@@ -21,7 +21,7 @@ Pod::Spec.new do |spec|
 
   spec.dependency 'SnapKit', '~> 5.6.0'
   spec.dependency 'OtusHomework'
-
+  spec.dependency 'ICConfetti'
 
   spec.platform     = :ios, "13.0"
   spec.author             = { "Arseniy" => "arsmatus@list.ru" }

@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3DE4DAF32F3823829FA6196 /* Pods_MatusHomework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A51A2DF056BDE568A55765E /* Pods_MatusHomework.framework */; };
 		DC5BDDF6293900E6003324A2 /* MatusHomework.h in Headers */ = {isa = PBXBuildFile; fileRef = DC5BDDF5293900E6003324A2 /* MatusHomework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC5BDDFE29390760003324A2 /* OtusHomework in Frameworks */ = {isa = PBXBuildFile; productRef = DC5BDDFD29390760003324A2 /* OtusHomework */; };
 		DC5BDE00293907B0003324A2 /* MatusHomework.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5BDDFF293907B0003324A2 /* MatusHomework.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		85E89DAB9871848D6EF31FEA /* Pods-MatusHomework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatusHomework.debug.xcconfig"; path = "Target Support Files/Pods-MatusHomework/Pods-MatusHomework.debug.xcconfig"; sourceTree = "<group>"; };
+		8A51A2DF056BDE568A55765E /* Pods_MatusHomework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MatusHomework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC5BDDF2293900E6003324A2 /* MatusHomework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MatusHomework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC5BDDF5293900E6003324A2 /* MatusHomework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatusHomework.h; sourceTree = "<group>"; };
 		DC5BDDFF293907B0003324A2 /* MatusHomework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatusHomework.swift; sourceTree = "<group>"; };
+		E59700FB13B4DEA6A8DACB7A /* Pods-MatusHomework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatusHomework.release.xcconfig"; path = "Target Support Files/Pods-MatusHomework/Pods-MatusHomework.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,17 +28,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC5BDDFE29390760003324A2 /* OtusHomework in Frameworks */,
+				D3DE4DAF32F3823829FA6196 /* Pods_MatusHomework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1ED9091384070137CDDDB920 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A51A2DF056BDE568A55765E /* Pods_MatusHomework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DC5BDDE8293900E6003324A2 = {
 			isa = PBXGroup;
 			children = (
 				DC5BDDF4293900E6003324A2 /* MatusHomework */,
 				DC5BDDF3293900E6003324A2 /* Products */,
+				F675401EFFA69A1A469512C6 /* Pods */,
+				1ED9091384070137CDDDB920 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +70,16 @@
 			path = MatusHomework;
 			sourceTree = "<group>";
 		};
+		F675401EFFA69A1A469512C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85E89DAB9871848D6EF31FEA /* Pods-MatusHomework.debug.xcconfig */,
+				E59700FB13B4DEA6A8DACB7A /* Pods-MatusHomework.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -73,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC5BDDF9293900E6003324A2 /* Build configuration list for PBXNativeTarget "MatusHomework" */;
 			buildPhases = (
+				A9EA15E3A5A6678A34D2336D /* [CP] Check Pods Manifest.lock */,
 				DC5BDDED293900E6003324A2 /* Headers */,
 				DC5BDDEE293900E6003324A2 /* Sources */,
 				DC5BDDEF293900E6003324A2 /* Frameworks */,
@@ -135,6 +161,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A9EA15E3A5A6678A34D2336D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MatusHomework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DC5BDDEE293900E6003324A2 /* Sources */ = {
@@ -270,6 +321,7 @@
 		};
 		DC5BDDFA293900E6003324A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85E89DAB9871848D6EF31FEA /* Pods-MatusHomework.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +352,7 @@
 		};
 		DC5BDDFB293900E6003324A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E59700FB13B4DEA6A8DACB7A /* Pods-MatusHomework.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;

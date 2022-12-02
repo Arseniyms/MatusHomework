@@ -6,5 +6,7 @@ target 'MatusHomework' do
   use_frameworks!
 
   # Pods for MatusHomework
+   
+  pod 'ICConfetti'
 
 end

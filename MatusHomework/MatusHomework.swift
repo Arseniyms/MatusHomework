@@ -7,6 +7,7 @@
 
 import UIKit
 import OtusHomework
+import ICConfetti
 
 public class MatusHomework: HasOtusHomeworkView {
     public var squareView: UIView?
@@ -25,14 +26,19 @@ public class SquareView: UIView {
         setupView()
     }
     
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setupView()
     }
     
-    
+    var icConfetti: ICConfetti!
+
     func setupView() {
         backgroundColor = .white
+        
+        icConfetti = ICConfetti()
+        icConfetti.rain(in: self)
         
         let label = UILabel()
         
