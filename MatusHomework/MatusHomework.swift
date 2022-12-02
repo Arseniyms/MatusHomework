@@ -27,6 +27,7 @@ public class SquareView: UIView {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+        setupView()
     }
     
     
