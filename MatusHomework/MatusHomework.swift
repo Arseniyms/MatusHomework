@@ -45,8 +45,9 @@ public class SquareView: UIView {
         self.addSubview(label)
         
         label.snp.makeConstraints { make in
-            make.horizontalEdges.equalToSuperview()
             make.center.equalToSuperview()
+            make.leading.equalToSuperview().offset(20)
+            make.trailing.equalToSuperview().offset(-20)
         }
         
         let circle = SpinningView()
@@ -55,10 +56,10 @@ public class SquareView: UIView {
         
         circle.snp.makeConstraints { make in
             make.center.equalToSuperview()
-            make.leading.equalToSuperview().offset(30)
-            make.trailing.equalToSuperview().offset(-30)
-            make.top.equalToSuperview().offset(30)
-            make.bottom.equalToSuperview().offset(-30)
+            make.leading.equalToSuperview().offset(10)
+            make.trailing.equalToSuperview().offset(-10)
+            make.top.equalToSuperview().offset(10)
+            make.bottom.equalToSuperview().offset(-10)
         }
         
     }
